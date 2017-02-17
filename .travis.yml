@@ -7,7 +7,7 @@ rvm:
  - jruby-9.0.5.0
 
 install:
- - gem install contracts
+ # - gem install contracts
  - gem install rspec
  - gem install webmock
  - gem install coveralls

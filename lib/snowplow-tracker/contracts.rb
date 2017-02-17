@@ -13,17 +13,17 @@
 # Copyright:: Copyright (c) 2013-2014 Snowplow Analytics Ltd
 # License:: Apache License Version 2.0
 
-require 'contracts'
+# require 'contracts'
 
 module SnowplowTracker
 
-  ORIGINAL_FAILURE_CALLBACK = Contract.method(:failure_callback)
-
-  def self.disable_contracts
-    Contract.define_singleton_method(:failure_callback) {|data| true}
-  end
-
-  def self.enable_contracts
-    Contract.define_singleton_method(:failure_callback, ORIGINAL_FAILURE_CALLBACK)
-  end
+  # ORIGINAL_FAILURE_CALLBACK = Contract.method(:failure_callback)
+  #
+  # def self.disable_contracts
+  #   Contract.define_singleton_method(:failure_callback) {|data| true}
+  # end
+  #
+  # def self.enable_contracts
+  #   Contract.define_singleton_method(:failure_callback, ORIGINAL_FAILURE_CALLBACK)
+  # end
 end
