@@ -22,7 +22,7 @@ module SnowplowTracker
     # include Contracts
 
     @@default_platform = 'srv'
-    @@supported_platforms = ['pc', 'tv', 'mob', 'cnsl', 'iot']
+    @@supported_platforms = ['pc', 'tv', 'mob', 'cnsl', 'iot', 'app']
 
     attr_reader :standard_nv_pairs
 
