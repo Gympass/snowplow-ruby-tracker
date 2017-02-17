@@ -55,7 +55,7 @@ module SnowplowTracker
         augmented_item_keys.subset? @@recognised_augmented_item_keys
     }
 
-    @@ContextsInput = ArrayOf[SelfDescribingJson]
+    # @@ContextsInput = ArrayOf[SelfDescribingJson]
 
     @@version = TRACKER_VERSION
     @@default_encode_base64 = true
