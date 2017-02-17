@@ -23,7 +23,7 @@ module SnowplowTracker
 
     # include Contracts
 
-    @@EmitterInput = Or[lambda {|x| x.is_a? Emitter}, ArrayOf[lambda {|x| x.is_a? Emitter}]]
+    # @@EmitterInput = Or[lambda {|x| x.is_a? Emitter}, ArrayOf[lambda {|x| x.is_a? Emitter}]]
 
     @@required_transaction_keys =   Set.new(%w(order_id total_value))
     @@recognised_transaction_keys = Set.new(%w(order_id total_value affiliation tax_value shipping city state country currency))
